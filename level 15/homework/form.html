@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Database Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form and Database Simulation</h1>
+    
+    <!-- ფორმა -->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="მათე" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- ცხრილი -->
+    <h2>Simulated Database Table</h2>
+    <table id="dataTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+    </table>
+
+    <script>
+        function submitForm() {
+            // მიიღეთ ველების მნიშვნელობები
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const age = document.getElementById('age').value;
+
+            // დაამატეთ ინფორმაცია ცხრილში
+            const table = document.getElementById('dataTable');
+            const newRow = table.insertRow();
+            newRow.innerHTML = `
+                <td>${name}</td>
+                <td>${email}</td>
+                <td>${age}</td>
+            `;
+
+            // გაასუფთავეთ ფორმა
+            document.getElementById('userForm').reset();
+        }
+    </script>
+</body>
+</html>
