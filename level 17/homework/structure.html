@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"] {
+            width: calc(100% - 160px);
+            padding: 5px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-left: 5px;
+        }
+        button {
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" required><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female" required> Female<br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label>Positions Available:</label>
+        <input type="radio" name="position" value="Junior Developer" required> Junior Developer
+        <input type="radio" name="position" value="Mid-level Developer" required> Mid-level Developer
+        <input type="radio" name="position" value="Senior Developer" required> Senior Developer<br>
+        
+        <label>Programming Languages:</label>
+        <input type="checkbox" name="language" value="Java"> Java
+        <input type="checkbox" name="language" value="JavaScript"> JavaScript
+        <input type="checkbox" name="language" value="Python"> Python<br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

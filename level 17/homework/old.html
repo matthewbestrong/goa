@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <select name="menu" id="dropdownOptions"></select>
+    <option value="service one">service One</option>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #007bff;
+            overflow: hidden;
+            display: flex;
+            padding: 0 20px;
+        }
+
+        /* Menu Items */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Top-Level Menu Links */
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            line-height: 40px;
+        }
+
+        /* Hover Effect for Top-Level Links */
+        nav ul li:hover {
+            background-color: #0056b3;
+        }
+
+        /* Submenu Styles */
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            display: none; /* Hidden by default */
+            min-width: 160px;
+            z-index: 1000;
+            padding: 0;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        nav ul li ul li a {
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+
+        /* Hover Effect for Submenu Links */
+        nav ul li ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Show Submenu on Hover */
+        nav ul li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <!-- Categories Menu -->
+            <li>
+                <a href="#">Categories</a>
+            </li>
+
+            <!-- Services Dropdown Menu -->
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                    <li><a href="#">Service Three</a></li>
+                    <li><a href="#">Service Four</a></li>
+                    <li><a href="#">Service Five</a></li>
+                    <li><a href="#">Service Six</a></li>
+                </ul>
+            </li>
+
+            <!-- Contact Us Menu -->
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
