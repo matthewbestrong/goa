@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #007BFF;
+    }
+    .media-container {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    video, audio, iframe {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%;
+    }
+    iframe {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Webpage</h1>
+
+  <!-- Video Section -->
+  <div class="media-container">
+    <h2>Video using &lt;video&gt; Tag</h2>
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+      <source src="video1.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Embedded Video Section -->
+  <div class="media-container">
+    <h2>Video using &lt;iframe&gt; Tag</h2>
+    <iframe width="560" height="315" src="iframe width="1046 height="588" src="https://youtu.be/j-9WsFOWliE?list=RDj-9WsFOWliE" title="მამაflex cute boi flez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="YouTube video"></iframe>
+  </div>
+
+  <!-- Audio Section -->
+  <div class="media-container">
+    <h2>Audio using &lt;audio&gt; Tag</h2>
+    <audio controls>
+      <source src="audio1.mp3" type="audio/mpeg">
+      <source src="audio1.ogg" type="audio/ogg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+</body>
+</html>

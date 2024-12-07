@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Application Form</h1>
+    <form>
+      <div class="row">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name">
+      </div>
+
+      <div class="row">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+      </div>
+
+      <div class="row">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="row">
+        <p>Positions Available:</p>
+        <label><input type="radio" name="position" value="junior"> Junior Developer</label>
+        <label><input type="radio" name="position" value="mid"> Mid-level Developer</label>
+        <label><input type="radio" name="position" value="senior"> Senior Developer</label>
+      </div>
+
+      <div class="row">
+        <p>Programming Languages:</p>
+        <label><input type="checkbox" name="languages" value="java"> Java</label>
+        <label><input type="checkbox" name="languages" value="javascript"> JavaScript</label>
+        <label><input type="checkbox" name="languages" value="python"> Python</label>
+      </div>
+
+      <div class="row">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password">
+      </div>
+
+      <div class="row buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
