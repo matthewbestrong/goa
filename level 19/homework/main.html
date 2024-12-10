@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boss Level Single-Page Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #064f59;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    form {
+      background-color: #eef;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input, form textarea, form select, form button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    footer a {
+      color: #ffb74d;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Travel Explorer</h1>
+    <p><i>Your gateway to amazing destinations around the world!</i></p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#media">Media</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p><strong>Travel Explorer</strong> is dedicated to helping you explore the most beautiful destinations in the world.</p>
+      <p><em>Plan your trips effortlessly</em> and enjoy unforgettable experiences!</p>
+      <hr>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+      <h2>Destinations</h2>
+      <article>
+        <h3>Popular Destinations</h3>
+        <ol>
+          <li>Paris, France</li>
+          <li>Tokyo, Japan</li>
+          <li>New York City, USA</li>
+        </ol>
+        <br>
+        <h3>Hidden Gems</h3>
+        <ul>
+          <li>Luang Prabang, Laos</li>
+          <li>Santorini, Greece</li>
+          <li>Petra, Jordan</li>
+        </ul>
+      </article>
+      <hr>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+      <h2>Media</h2>
+
+      <!-- Images -->
+      <div class="image-gallery">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 1">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 2">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 3">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 4">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 5">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 6">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 7">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 8">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 9">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 10">
+      </div>
+
+      <!-- Videos -->
+      <h3>Watch Our Videos</h3>
+      <video controls>
+        <source src="sample.mp4" type="video/mp4">
+        <source src="sample.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"></iframe>
+      <hr>
+
+      <!-- Audio -->
+      <h3>Listen to Our Playlist</h3>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        <source src="sample.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+        <source src="sample2.mp3" type="audio/mpeg">
+        <source src="sample2.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <hr>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="compliment">Compliment</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="complaint">Complaint</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Feedback"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <hr>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Travel Explorer. All Rights Reserved.</p>
+    <a href="#top">Return to Top</a>
+  </footer>
+</body>
+</html>
