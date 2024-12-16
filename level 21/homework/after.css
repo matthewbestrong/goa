@@ -1,0 +1,21 @@
+/* Font size styles for paragraphs */
+.small-text {
+    font-size: 12px;
+}
+
+.medium-text {
+    font-size: 16px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+/* Font weight styles */
+.bold-heading {
+    font-weight: bold;
+}
+
+.light-paragraph {
+    font-weight: lighter;
+}

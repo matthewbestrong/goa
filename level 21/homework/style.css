@@ -1,0 +1,16 @@
+/* Style for the div with a solid border */
+.solid-border {
+    border: 5px solid black; /* 5px thickness, solid style, black color */
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Style for the image with a dotted border */
+.dotted-border {
+    border: 3px dotted blue; /* 3px thickness, dotted style, blue color */
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+}
