@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        .block {
+            border: 2px solid blue;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .inline {
+            border: 2px dashed green;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block vs Inline Elements</h1>
+
+    <!-- Block Elements -->
+    <div class="block">This is a div element (Block).</div>
+    <p class="block">This is a paragraph element (Block).</p>
+    <section class="block">This is a section element (Block).</section>
+
+    <!-- Inline Elements -->
+    <span class="inline">This is a span element (Inline).</span>
+    <a href="#" class="inline">This is a link element (Inline).</a>
+    <strong class="inline">This is a strong element (Inline).</strong>
+
+    <!-- Comment: Block vs Inline -->
+    <!-- 
+        Block Elements:
+        1. Always start on a new line.
+        2. Take up the full width available (by default).
+        3. Examples: <div>, <p>, <section>, <header>, <footer>, etc.
+
+        Inline Elements:
+        1. Do not start on a new line.
+        2. Take up only as much width as needed.
+        3. Examples: <span>, <a>, <strong>, <em>, etc.
+    -->
+</body>
+</html>
