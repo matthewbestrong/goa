@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Concepts Example</title>
+  <style>
+    /* Selector: body - ვამატებთ სტილს მთელ გვერდს */
+    body {
+      font-family: Arial, sans-serif; /* CSS დეკლარაცია: font-family */
+      background-color: #f0f0f0; /* CSS დეკლარაცია: background-color */
+      color: #333; /* CSS დეკლარაცია: color */
+    }
+
+    /* Selector: p - სტილი კონკრეტულ პარს */
+    p {
+      font-size: 16px; /* CSS დეკლარაცია: font-size */
+      color: blue; /* CSS დეკლარაცია: color */
+    }
+
+    /* Class selector: .highlight - სტილი ყველა ელემენტისთვის, რომელსაც აქვს კლასური სახელწოდება 'highlight' */
+    .highlight {
+      background-color: yellow; /* CSS დეკლარაცია: background-color */
+    }
+
+    /* Descendant selector: div p - სტილი ყველა p ელემენტისთვის, რომელიც div-ის შიგნით არის */
+    div p {
+      color: green; /* CSS დეკლარაცია: color */
+    }
+
+    /* ID selector: #special - სტილი მხოლოდ იმ ელემენტისათვის, რომელსაც აქვს ID 'special' */
+    #special {
+      font-weight: bold; /* CSS დეკლარაცია: font-weight */
+      color: red; /* CSS დეკლარაცია: color */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Concepts Example</h1>
+  
+  <p>This is a normal paragraph.</p>
+  <p class="highlight">This paragraph has the highlight class applied.</p>
+  
+  <div>
+    <p>This paragraph is inside a div and has green text due to the descendant selector.</p>
+  </div>
+
+  <p id="special">This paragraph has a special ID and its text is bold and red.</p>
+
+</body>
+</html>

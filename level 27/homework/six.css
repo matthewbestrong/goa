@@ -1,0 +1,39 @@
+/* Common styles for <h1>, <p>, and <button> elements */
+h1, p, button {
+    font-family: 'Arial', sans-serif;  /* All elements use Arial font */
+    color: darkslategray;               /* Text color is dark slate gray */
+    font-size: 18px;                    /* Font size is 18px for all elements */
+    margin: 15px 0;                     /* Margin to space out elements */
+    padding: 10px;                      /* Padding for button and other elements */
+  }
+  
+  /* Additional styles for <button> element */
+  button {
+    background-color: #4CAF50;  /* Green background color */
+    color: white;               /* White text color */
+    border: none;               /* Remove border for a clean look */
+    border-radius: 5px;         /* Rounded corners for the button */
+    cursor: pointer;            /* Pointer cursor when hovering over the button */
+  }
+  
+  /* Hover effect for the button */
+  button:hover {
+    background-color: #45a049;  /* Slightly darker green when hovered */
+  }
+  
+  /* Style specifically for <h1> element */
+  h1 {
+    text-align: center;         /* Center-align the heading */
+    font-size: 24px;            /* Increase font size for the heading */
+    font-weight: bold;          /* Make the heading bold */
+  }
+  
+  /* Style specifically for <p> element */
+  p {
+    text-align: justify;        /* Justify the paragraph text */
+    line-height: 1.6;           /* Set line height for better readability */
+    max-width: 600px;           /* Limit the width of the paragraph */
+    margin-left: auto;          /* Auto margin for centering */
+    margin-right: auto;         /* Auto margin for centering */
+  }
+  

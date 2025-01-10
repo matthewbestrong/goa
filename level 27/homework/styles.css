@@ -1,0 +1,10 @@
+/* Parent <div> sets the text color */
+.parent {
+    color: blue;  /* The text color is blue for all child elements */
+  }
+  
+  /* Override the text color for the specific <p> element */
+  .override {
+    color: red;  /* This specific paragraph will have red text instead of blue */
+  }
+  

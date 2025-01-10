@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Change and Alert Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .photos img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Change and Alert Example</h1>
+    
+    <div class="photos">
+        <img src="image.png" alt="Photo 1" onclick="changePhoto(this, 'image copy.png')">
+        <img src="image copy 2.png" alt="Photo 2" onclick="changePhoto(this, 'image copy 3.png')">
+        <img src="image copy 4.png" alt="Photo 3" onclick="changePhoto(this, 'image copy 5.png')">
+    </div>
+
+    <button onclick="showAlert()">Click Me for Alert</button>
+
+    <script>
+        // Function to change photo on click
+        function changePhoto(imgElement, newSrc) {
+            imgElement.src = newSrc;
+        }
+
+        // Function to show alert message
+        function showAlert() {
+            alert("GOA BEST");
+        }
+    </script>
+</body>
+</html>

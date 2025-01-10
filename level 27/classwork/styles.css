@@ -1,0 +1,22 @@
+/* აირჩიეთ <p> ელემენტი და შეცვალეთ მისი კუთვნილებები */
+
+/* 1. ფერი (color) */
+p {
+    color: darkblue; /* ტექსტის ფერი darkblue */
+    
+    /* 2. ფონის ფერი (background-color) */
+    background-color: lightyellow; /* ფონის ფერი lightyellow */
+    
+    /* 3. განლაგება (text-align) */
+    text-align: center; /* ტექსტის განლაგება ცენტრში */
+    
+    /* 4. ტექსტის ზომა (font-size) */
+    font-size: 20px; /* ტექსტის ზომა 20px */
+    
+    /* 5. ტექსტის სისქე (font-weight) */
+    font-weight: bold; /* ტექსტი იქნება მტკიცე (bold) */
+    
+    /* 6. საზღვარი (border) */
+    border: 2px solid darkblue; /* საზღვარი 2px სისქის, solid ფორმატის და darkblue ფერის */
+  }
+  

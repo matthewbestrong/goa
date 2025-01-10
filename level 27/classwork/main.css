@@ -1,0 +1,23 @@
+/* სტილები <div> ბლოკისთვის */
+.content-block {
+    /* 1. ფერი (color) */
+    color: darkslategray; /* ტექსტის ფერი darkslategray */
+  
+    /* 2. ფონის ფერი (background-color) */
+    background-color: lightblue; /* ფონის ფერი lightblue */
+  
+    /* 3. განლაგება (text-align) */
+    text-align: center; /* ტექსტი განლაგებულია ცენტრში */
+  
+    /* 4. ტექსტის ზომა (font-size) */
+    font-size: 18px; /* ტექსტის ზომა 18px */
+  
+    /* 5. ტექსტის სისქე (font-weight) */
+    font-weight: bold; /* ტექსტი მტკიცე (bold) */
+  
+    /* 6. საზღვარი (border) */
+    border: 3px solid darkblue; /* საზღვარი 3px სისქის და darkblue ფერის */
+    padding: 20px; /* padding, რათა ტექსტი იყოს უფრო თავისუფალი */
+    margin: 20px;  /* margin, რათა ბლოკი არ იყოს გვერდზე მიყრდნობილი */
+  }
+  

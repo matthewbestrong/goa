@@ -1,0 +1,22 @@
+/* Common styles for <p>, <h1>, and <button> elements */
+p, h1, button {
+    font-family: Arial, sans-serif;  /* All elements share the same font */
+    color: darkblue;                 /* All elements share the same text color */
+    font-size: 16px;                 /* All elements share the same font size */
+    margin: 10px 0;                  /* All elements have the same margin */
+  }
+  
+  /* Additional rule for the <button> element */
+  button {
+    background-color: #4CAF50;  /* Button gets a green background */
+    color: white;               /* Button text color is white */
+    border: none;               /* Button has no border */
+    padding: 10px 20px;          /* Button has padding for better appearance */
+    cursor: pointer;            /* Button has a pointer cursor on hover */
+  }
+  
+  /* Optional: Add a hover effect to the button */
+  button:hover {
+    background-color: #45a049;  /* Button background color darkens when hovered */
+  }
+  
