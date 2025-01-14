@@ -1,0 +1,9 @@
+/* Selecting by class */
+.btn {
+    color: red; /* This will be overridden */
+}
+
+/* Selecting by ID */
+#myButton {
+    color: blue; /* This rule will take precedence because ID selectors have higher specificity */
+}

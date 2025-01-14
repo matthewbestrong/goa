@@ -1,0 +1,15 @@
+/* ყველა ღილაკის ფონის ფერის გაწერა */
+.black-button {
+    background-color: black;
+    color: white; /* ტექსტის ფერი თეთრი */
+    border: none; /* საზღვრის მოცილება */
+    padding: 10px 20px; /* ღილაკის შიდა განლაგება */
+    margin: 5px; /* ღილაკებს შორის მანძილი */
+    border-radius: 5px; /* მომრგვალებული კუთხეები */
+    cursor: pointer; /* კურსორის შეცვლა */
+}
+
+/* ჰოვერის ეფექტი ღილაკზე */
+.black-button:hover {
+    background-color: gray;
+}

@@ -1,0 +1,50 @@
+/* General styles for div blocks */
+#block1 {
+    color: rgb(255, 0, 0); /* Red text */
+    background-color: rgb(240, 240, 240); /* Light gray background */
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid rgb(255, 0, 0);
+  }
+  
+  #block2 {
+    color: rgb(0, 0, 255); /* Blue text */
+    background-color: rgb(230, 230, 250); /* Lavender background */
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid rgb(0, 0, 255);
+  }
+  
+  #block3 {
+    color: rgb(0, 128, 0); /* Green text */
+    background-color: rgb(245, 255, 250); /* Mint cream background */
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid rgb(0, 128, 0);
+  }
+  
+  #block4 {
+    color: rgb(255, 165, 0); /* Orange text */
+    background-color: rgb(255, 239, 213); /* Papaya whip background */
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid rgb(255, 165, 0);
+  }
+  
+  #block5 {
+    color: rgb(138, 43, 226); /* Purple text */
+    background-color: rgb(245, 245, 255); /* White smoke background */
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid rgb(138, 43, 226);
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(100, 100, 100);
+    cursor: pointer;
+  }
+  

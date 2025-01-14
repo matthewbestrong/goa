@@ -1,0 +1,24 @@
+/* პირველი პარაგრაფის ფერი */
+#paragraph1 {
+    color: red;
+}
+
+/* მეორე პარაგრაფის ფერი */
+#paragraph2 {
+    color: green;
+}
+
+/* მესამე პარაგრაფის ფერი */
+#paragraph3 {
+    color: blue;
+}
+
+/* მეოთხე პარაგრაფის ფერი */
+#paragraph4 {
+    color: orange;
+}
+
+/* მეხუთე პარაგრაფის ფერი */
+#paragraph5 {
+    color: purple;
+}

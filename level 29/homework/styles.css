@@ -1,0 +1,42 @@
+/* ID-ის სტილი */
+#main-heading {
+    color: rgb(34, 139, 230);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Class-ის სტილი */
+.shared-style p {
+    font-size: 16px;
+    color: rgb(85, 107, 47);
+    background-color: rgb(240, 255, 240);
+    padding: 10px;
+    border: 1px solid rgb(144, 238, 144);
+    margin: 5px 0;
+}
+
+/* ღილაკის საერთო სტილი (Class გამოყენებით) */
+.btn {
+    font-size: 14px;
+    color: white;
+    background-color: rgb(220, 20, 60);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 69, 0);
+}
+
+/* Footer-ის ID-ის სტილი */
+#footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(105, 105, 105);
+    padding: 10px;
+}

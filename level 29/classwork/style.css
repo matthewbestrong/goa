@@ -1,0 +1,49 @@
+/* I პარაგრაფი - თეთრი ფერი */
+#para1 {
+    color: rgb(255, 255, 255);
+    background-color: black; /* თეთრი ფერი თვალსაჩინოა შავ ფონზე */
+    padding: 10px;
+}
+
+/* II პარაგრაფი - შავი ფერი */
+#para2 {
+    color: rgb(0, 0, 0);
+    background-color: lightgray; /* შავი ფერი თვალსაჩინოა ღია ფონზე */
+    padding: 10px;
+}
+
+/* III პარაგრაფი - წითელი ფერი */
+#para3 {
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+/* IV პარაგრაფი - მწვანე ფერი */
+#para4 {
+    color: rgb(0, 255, 0);
+    padding: 10px;
+}
+
+/* V პარაგრაფი - ლურჯი ფერი */
+#para5 {
+    color: rgb(0, 0, 255);
+    padding: 10px;
+}
+
+/* VI პარაგრაფი - ყვითელი ფერი */
+#para6 {
+    color: rgb(255, 255, 0);
+    padding: 10px;
+}
+
+/* VII პარაგრაფი - ცისფერი ფერი */
+#para7 {
+    color: rgb(0, 255, 255);
+    padding: 10px;
+}
+
+/* VIII პარაგრაფი - იასამნისფერი ფერი */
+#para8 {
+    color: rgb(128, 0, 128);
+    padding: 10px;
+}
