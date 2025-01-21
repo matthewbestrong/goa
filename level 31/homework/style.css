@@ -1,0 +1,19 @@
+/* მშობელი დივ ბლოკი */
+.parent-div {
+    width: 1000px;
+    height: 1000px;
+    background-color: #008000; /* მწვანე */
+    position: relative;
+  }
+  
+  /* შვილობილი დივ ბლოკი */
+  .child-div {
+    width: 20%; /* მშობელი დივ ბლოკის სიგანის 20% */
+    height: 15%; /* მშობელი დივ ბლოკის სიმაღლის 15% */
+    background-color: #000000; /* შავი */
+    position: absolute; /* პოზიციონირება მშობლის მიმართ */
+    top: 50%; /* მშობლის ცენტრში ჩასმისთვის */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

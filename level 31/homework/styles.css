@@ -1,0 +1,52 @@
+/* RGB color model for the first 5 paragraphs */
+#para1 {
+    color: rgb(255, 0, 0); /* Red text */
+    background-color: rgb(240, 240, 240); /* Light gray background */
+  }
+  
+  #para2 {
+    color: rgb(0, 128, 0); /* Green text */
+    background-color: rgb(255, 255, 200); /* Light yellow background */
+  }
+  
+  #para3 {
+    color: rgb(0, 0, 255); /* Blue text */
+    background-color: rgb(200, 255, 200); /* Light green background */
+  }
+  
+  #para4 {
+    color: rgb(255, 165, 0); /* Orange text */
+    background-color: rgb(200, 200, 255); /* Light blue background */
+  }
+  
+  #para5 {
+    color: rgb(128, 0, 128); /* Purple text */
+    background-color: rgb(255, 200, 255); /* Light pink background */
+  }
+  
+  /* HEX color model for the remaining 5 paragraphs */
+  #para6 {
+    color: #ff4500; /* OrangeRed text */
+    background-color: #f0f8ff; /* AliceBlue background */
+  }
+  
+  #para7 {
+    color: #2e8b57; /* SeaGreen text */
+    background-color: #fafad2; /* LightGoldenrodYellow background */
+  }
+  
+  #para8 {
+    color: #4682b4; /* SteelBlue text */
+    background-color: #ffe4c4; /* Bisque background */
+  }
+  
+  #para9 {
+    color: #daa520; /* GoldenRod text */
+    background-color: #f5f5dc; /* Beige background */
+  }
+  
+  #para10 {
+    color: #8b0000; /* DarkRed text */
+    background-color: #ffefd5; /* PapayaWhip background */
+  }
+  
