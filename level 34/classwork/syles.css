@@ -1,0 +1,11 @@
+/* @font-face-ში ფონტის ჩატვირთვა */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+  }
+  
+  /* body-სთვის ფონტის გამოყენება */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
