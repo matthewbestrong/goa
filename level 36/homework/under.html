@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a3c96f;
+            text-align: center;
+            padding: 50px;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th {
+            background-color: #f9e37d;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>CODE</th>
+                <th>STOCK</th>
+                <th>CAP</th>
+                <th>INCH</th>
+                <th>BOX TYPE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>CES-9000</td><td>50mt</td><td>9mm</td><td>1/2"</td><td>Kangal / Coil</td></tr>
+            <tr><td>CES-9000</td><td>50mt</td><td>9mm</td><td>1/2"</td><td>Kangal / Coil</td></tr>
+            <tr><td>CES-9000</td><td>50mt</td><td>9mm</td><td>1/2"</td><td>Kangal / Coil</td></tr>
+            <tr><td>CES-9000</td><td>50mt</td><td>9mm</td><td>1/2"</td><td>Kangal / Coil</td></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
