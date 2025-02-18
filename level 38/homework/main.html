@@ -1,0 +1,22 @@
+<form id="myForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <p class="error-message" id="usernameError" style="display: none;">Username is required</p>
+    
+    <button type="submit">Submit</button>
+  </form>
+  
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      let usernameInput = document.getElementById("username");
+      let errorText = document.getElementById("usernameError");
+  
+      if (usernameInput.value.trim() === "") {
+        errorText.style.display = "flex"; // Show error message
+        event.preventDefault(); // Prevent form submission
+      } else {
+        errorText.style.display = "none"; // Hide error if valid
+      }
+    });
+  </script>
+  

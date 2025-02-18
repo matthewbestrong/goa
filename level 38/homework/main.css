@@ -1,0 +1,14 @@
+.error-message {
+    color: #d9534f; /* Red text */
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+  }
+  
+  .error-message::before {
+    content: "⚠"; /* Warning icon */
+    font-size: 16px;
+  }
+  

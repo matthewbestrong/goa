@@ -1,0 +1,16 @@
+input {
+    border: 2px solid #ccc; /* Default border */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    background-color: #ffffff; /* White background when focused */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Soft glow effect */
+    outline: none; /* Remove default browser outline */
+  }
+  

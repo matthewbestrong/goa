@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფორმის სტილიზაცია</title>
+    <style>
+        /* სტილი მთლიანი კონტეინერისთვის */
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* input ველების სტილი */
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input:focus {
+            border-color: #4CAF50;
+            background-color: #ffffff;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+            outline: none;
+        }
+
+        /* ღილაკის სტილი */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* შეცდომის შეტყობინება */
+        .error-message {
+            color: #d9534f;
+            font-size: 14px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            display: none;
+        }
+
+        .error-message::before {
+            content: "⚠";
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>შეიყვანეთ მონაცემები</h3>
+    <form id="myForm">
+        <input type="text" id="username" name="username" placeholder="შეიყვანეთ სახელი">
+        <p class="error-message" id="usernameError">სახელი სავალდებულოა</p>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        let usernameInput = document.getElementById("username");
+        let errorText = document.getElementById("usernameError");
+
+        if (usernameInput.value.trim() === "") {
+            errorText.style.display = "flex"; // შეცდომის გამოჩენა
+            event.preventDefault(); // ფორმის გაგზავნის შეჩერება
+        } else {
+            errorText.style.display = "none"; // შეცდომის დამალვა
+        }
+    });
+</script>
+
+</body>
+</html>

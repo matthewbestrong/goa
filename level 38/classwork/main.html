@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container {
+            width: 794px;
+            height: 160px;
+            background-color: lightblue;
+        }
+
+        .padding {
+            padding: 50px;
+            background-color: lightgreen;
+            display: inline-block;
+        }
+
+        .border {
+            border: 5px solid black;
+            background-color: lightyellow;
+            display: inline-block;
+        }
+
+        .margin {
+            margin: 50px;
+            background-color: sandybrown;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="margin">
+        <div class="border">
+            <div class="padding">
+                <div class="container">794 × 160</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

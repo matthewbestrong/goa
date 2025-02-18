@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box with Shadowed Border</title>
+    <style>
+        /* კონტეინერის სტილიზაცია */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Box-ის სტილიზაცია საზღვრით და ჩრდილით */
+        .box {
+            width: 300px;
+            padding: 20px;
+            border: 3px solid #4CAF50; /* მწვანე საზღვარი */
+            border-radius: 8px; /* მრგვალი კუთხეები */
+            background-color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ჩრდილი */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        ეს არის Box საზღვრით და ჩრდილით!
+    </div>
+</div>
+
+</body>
+</html>

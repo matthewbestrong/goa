@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* მთლიანი კონტეინერი */
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Input ველების სტილიზაცია */
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Focus ეფექტი */
+        input:focus {
+            border-color: #4CAF50;
+            background-color: #ffffff;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+            outline: none;
+        }
+
+        /* Submit ღილაკი */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* შეცდომის შეტყობინება */
+        .error-message {
+            color: #d9534f;
+            font-size: 14px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            display: none;
+        }
+
+        .error-message::before {
+            content: "⚠";
+            font-size: 16px;
+        }
+
+        /* Padding-ით გაფორმებული div */
+        .box {
+            background-color: #ffcc80;
+            border: 2px solid #ff9800;
+            padding: 10px 20px 30px 40px; /* ზემოთ, მარჯვნივ, ქვემოთ, მარცხნივ */
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>სრული ფორმის დიზაინი</h3>
+    
+    <!-- ფორმა Input ველებით -->
+    <form id="myForm">
+        <label for="username">სახელი:</label>
+        <input type="text" id="username" name="username" placeholder="შეიყვანეთ სახელი">
+        <p class="error-message" id="usernameError">სახელი სავალდებულოა</p>
+
+        <label for="email">ელ-ფოსტა:</label>
+        <input type="email" id="email" name="email" placeholder="შეიყვანეთ ელ-ფოსტა">
+        <p class="error-message" id="emailError">ელ-ფოსტა სავალდებულოა</p>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+    <!-- Padding-ით გაფორმებული div -->
+    <div class="box">
+        ეს დივი შეიცავს სხვადასხვა padding მნიშვნელობებს!
+    </div>
+</div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        let usernameInput = document.getElementById("username");
+        let emailInput = document.getElementById("email");
+        let usernameError = document.getElementById("usernameError");
+        let emailError = document.getElementById("emailError");
+
+        let valid = true;
+
+        // ვალიდაცია სახელისთვის
+        if (usernameInput.value.trim() === "") {
+            usernameError.style.display = "flex";
+            valid = false;
+        } else {
+            usernameError.style.display = "none";
+        }
+
+        // ვალიდაცია ელ-ფოსტისთვის
+        if (emailInput.value.trim() === "") {
+            emailError.style.display = "flex";
+            valid = false;
+        } else {
+            emailError.style.display = "none";
+        }
+
+        if (!valid) {
+            event.preventDefault(); // ფორმის გაგზავნის შეჩერება, თუ შეცდომებია
+        }
+    });
+</script>
+
+</body>
+</html>

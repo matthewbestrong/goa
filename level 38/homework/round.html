@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Padding and Border</title>
+    <style>
+        /* Button-ის სტილიზაცია padding-ით და საზღვრით */
+        button {
+            padding: 10px 20px; /* შიგნით სივრცე (ზემოთ/ქვემოთ და მარჯვნივ/მარცხნივ) */
+            border: 2px solid #4CAF50; /* მწვანე საზღვარი */
+            border-radius: 5px; /* მრგვალი კუთხეები */
+            background-color: #ffffff; /* თეთრი ფონდი */
+            color: #4CAF50; /* მწვანე ტექსტი */
+            font-size: 16px;
+            cursor: pointer; /* მაუსის ხატი, როცა კლიკდება */
+            transition: all 0.3s ease; /* სლიდის ეფექტი */
+        }
+
+        /* Hover ეფექტი */
+        button:hover {
+            background-color: #4CAF50; /* მწვანე ფონდი */
+            color: white; /* თეთრი ტექსტი */
+            transform: scale(1.05); /* ოდნავი ზომის ზრდა */
+        }
+
+        /* Active (კლიკვის დროს) ეფექტი */
+        button:active {
+            transform: scale(0.95); /* მცირე ზომის შემცირება */
+        }
+    </style>
+</head>
+<body>
+
+<!-- ბუტონი -->
+<button>დააჭირეთ აქ</button>
+
+</body>
+</html>
